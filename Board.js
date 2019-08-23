@@ -8,6 +8,10 @@ class Board {
   asString() {
     return "I am a board";
   }
+
+  setCell(i_width, i_height, value) {
+    this.matrixWithAliveCells[i_width][i_height] = value;
+  }
 }
 
 module.exports = Board;
