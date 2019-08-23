@@ -27,6 +27,17 @@ class Board {
       }
     }
   }
+
+  moveBoardOneStepAhead() {
+    const oldMatrix = _.cloneDeep(this.matrixWithAliveCells);
+
+    for (let iw = 0; iw < this.width; iw++) {
+      for (let ih = 0; ih < this.height; ih++) {
+        this.matrixWithAliveCells[iw][ih] = !oldMatrix[iw][ih];
+      }
+    }
+  }
+
 }
 
 module.exports = Board;
