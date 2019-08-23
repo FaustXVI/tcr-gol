@@ -19,9 +19,9 @@ describe('Board', () => {
         expect(board.matrixWithAliveCells[3][4]).toEqual(true);
     });
 
-    it('should return a string representation', () => {
-        const board = new Board(5, 6);
-        expect(board.asString()).toEqual("I am a board")
+    it('should represent a dead cell with a dot', () => {
+        const board = new Board(1, 1);
+        expect(board.asString()).toEqual(".\n");
     });
 
     it('should print an empty board', () => {

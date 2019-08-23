@@ -9,7 +9,7 @@ class Board {
         if (this.width === 0) {
             return "";
         }
-        return "I am a board";
+        return ".\n";
     }
 
     setCell(i_width, i_height, value) {
