@@ -1,0 +1,23 @@
+{
+  "name": "tcr-gol",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FaustXVI/tcr-gol.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FaustXVI/tcr-gol/issues"
+  },
+  "homepage": "https://github.com/FaustXVI/tcr-gol#readme",
+  "devDependencies": {
+    "jest": "^24.9.0"
+  }
+}
