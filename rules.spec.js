@@ -21,7 +21,7 @@ describe('Alive Cell', () => {
     expect(willBeAlive(numberOfLivingNeighbors, true)).toEqual(false);
   });
 
-  it.each([[4], [5], [6], [7]]) ('dies because of over-population with %i living Neighbors', (numberOfLivingNeighbors) => {
+  it.each([[4], [5], [6], [7], [8]]) ('dies because of over-population with %i living Neighbors', (numberOfLivingNeighbors) => {
     expect(willBeAlive(numberOfLivingNeighbors, true)).toEqual(false);
   });
 
