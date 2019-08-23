@@ -16,12 +16,14 @@ describe('game', () => {
     });
 
     it('should print for each iteration', () => {
-        boardAsString.mockImplementation(()=> "board printed");
+        const iterations = 10;
+        let callCount = 0;
+        boardAsString.mockImplementation(()=> `board printed ${callCount}`);
 
-        simulateGame(10, new Board(10, 10), print);
+        simulateGame(iterations, new Board(10, 10), print);
 
-        for (let i = 0; i < 10; i++) {
-            expect(print.mock.calls[i][0]).toBe("board printed");
+        for (let i = 0; i < iterations; i++) {
+            expect(print.mock.calls[i][0]).toBe(`board printed ${callCount}`);
         }
     })
 });
