@@ -1,1 +1,3 @@
-console.log("configure me");
+const simulateGame = require('./game');
+
+simulateGame(10, (line) => console.log(line));
