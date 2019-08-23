@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "git stash && git pull --rebase && git stash pop && (npx jest && (git add -A; git commit -am '.'; git push) || git reset --hard)",
+    "test": "git stash && git pull --rebase && git stash pop && npm install && (npx jest && (git add -A; git commit -am '.'; git push) || git reset --hard)",
     "start": "node index"
   },
   "repository": {
@@ -20,5 +20,8 @@
   "homepage": "https://github.com/FaustXVI/tcr-gol#readme",
   "devDependencies": {
     "jest": "^24.9.0"
+  },
+  "dependencies": {
+    "lodash": "^4.17.15"
   }
 }

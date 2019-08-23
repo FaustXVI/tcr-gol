@@ -29,4 +29,9 @@ describe('Board', () => {
         expect(board.asString()).toEqual("");
     });
 
+  it('should move board one dummy step ahead and negate every field', () => {
+      const board = new Board(5, 6);
+      board.moveBoardOneStepAhead();
+      expect(board.matrixWithAliveCells.some(line => line.some(cell => !cell))).toEqual(false);
+  });
 });
