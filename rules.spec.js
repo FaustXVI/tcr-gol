@@ -22,7 +22,7 @@ describe('Alive Cell', () => {
   });
 
   it('dies with more than 3 living neighbours', () => {
-    expect(willBeAlive(8, true)).toEqual(false);
+    expect(willBeAlive(4, true)).toEqual(false);
   });
 })
 
