@@ -22,5 +22,11 @@ describe('Board', () => {
   it('should return a string representation', () => {
     const board = new Board(5, 6);
     expect(board.asString()).toEqual("I am a board")
-  })
+  });
+
+  it('should print an empty board', () => {
+      const board = new Board(0, 0);
+      expect(board.asString()).toEqual("");
+  });
+
 });
