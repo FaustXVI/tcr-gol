@@ -21,7 +21,7 @@ describe('Alive Cell', () => {
     it.each([[4], [5], [6], [7], [8]])('dies because of over-population with %i living Neighbors', (numberOfLivingNeighbors) => {
         expect(willBeAlive(numberOfLivingNeighbors, true)).toEqual(false);
     });
-})
+});
 
 const willBeAlive = (aliveNeighborCount, isAlive) => (isAlive && aliveNeighborCount === 2) || aliveNeighborCount === 3;
 
