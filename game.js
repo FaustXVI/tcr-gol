@@ -1,5 +1,7 @@
 function simulateGame(iterations, printer) {
-    printer("configure me");
+    for (let i = 0; i < iterations; i++) {
+        printer("configure me");
+    }
 }
 
 module.exports = simulateGame;
