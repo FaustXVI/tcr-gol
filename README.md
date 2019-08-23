@@ -3,4 +3,4 @@
 ## start with:
 
 npm i
-npx jest --watch
+npx jest
