@@ -28,10 +28,6 @@ describe('Alive Cell', () => {
   it('dies with 8 living neighbours', () => {
     expect(willBeAlive(8, true)).toEqual(false);
   });
-
-  it('dies with 0 living neighbours', () => {
-    expect(willBeAlive(0, true)).toEqual(false);
-  });
 })
 
 const willBeAlive = (aliveNeighborCount, isAlive) => (isAlive && aliveNeighborCount === 2) || aliveNeighborCount === 3;
