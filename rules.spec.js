@@ -9,13 +9,7 @@ describe('Dead Cell', () => {
 });
 
 describe('Alive Cell', () => {
-  it('stays alive with 2 living neighbours', () => {
-    expect(willBeAlive(2, true)).toEqual(true);
-  });
 
-  it('stays alive with 3 living neighbours', () => {
-    expect(willBeAlive(3, true)).toEqual(true);
-  });
 
   it.each([[2], [3]]) ('stays alive with %i living Neighbors', (numberOfLivingNeighbors) => {
     expect(willBeAlive(numberOfLivingNeighbors, true)).toEqual(true);
